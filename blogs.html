@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs | Dental Tourism</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 112px;
+        }
+        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); }
+        .hero-gradient { background: radial-gradient(circle at top right, #eff6ff, #ffffff); }
+        section { scroll-margin-top: 112px; }
+        .blog-card img { transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1); }
+        .blog-card:hover img { transform: scale(1.08); }
+        .editorial-glow {
+            background: radial-gradient(circle at top, rgba(59,130,246,0.10), transparent 55%);
+        }
+        .article-prose p { margin-top: 1rem; }
+    </style>
+</head>
+<body class="bg-white text-slate-900 font-sans leading-relaxed overflow-x-hidden">
+    <nav class="fixed top-0 w-full z-50 glass border-b border-slate-100">
+        <div class="max-w-[1440px] mx-auto px-6 h-20 md:h-28 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-black tracking-tighter flex items-center gap-2">
+                <div class="w-8 h-8 bg-blue-600 rounded-lg shadow-lg shadow-blue-200"></div>
+                DENTAL<span class="text-blue-600">TOURISM</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-10 text-[13px] font-black uppercase tracking-widest">
+                <a href="index.html#clinics" class="hover:text-blue-600 transition-colors">Clinics</a>
+                <a href="index.html#destinations" class="hover:text-blue-600 transition-colors">Travel</a>
+                <a href="blogs.html" class="text-blue-600">Blogs</a>
+                <a href="index.html#book-now" class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/80 px-6 py-3 text-slate-900 shadow-sm transition hover:border-blue-200 hover:bg-blue-50 hover:text-blue-600">
+                    <span>BOOK NOW</span>
+                </a>
+            </div>
+            <a href="index.html" class="md:hidden text-sm font-black uppercase tracking-widest text-blue-600">Home</a>
+        </div>
+    </nav>
+
+    <section class="hero-gradient pt-40 md:pt-56 pb-20 md:pb-28 px-6">
+        <div class="max-w-[1440px] mx-auto grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
+            <div data-aos="fade-up">
+                <p class="text-blue-600 font-bold tracking-[0.2em] uppercase text-sm mb-4">Dental Tourism Blog</p>
+                <h1 class="text-4xl sm:text-6xl md:text-[78px] font-black tracking-tighter mb-8 leading-[1.02] text-slate-950">
+                    Guides for
+                    <span class="text-blue-600">travel + treatment.</span>
+                </h1>
+                <p class="text-lg md:text-xl text-slate-500 max-w-2xl font-medium mb-10">
+                    Static editorial content for patients planning dental care in Da Nang. Each article below opens a full reading view with practical tips.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#posts" class="px-10 py-5 bg-blue-600 text-white rounded-2xl font-bold text-lg hover:scale-105 transition-transform shadow-2xl shadow-blue-200">Explore Blogs</a>
+                    <a href="index.html" class="px-10 py-5 bg-white border border-slate-200 text-slate-900 rounded-2xl font-bold text-lg hover:bg-slate-50 transition-colors">Back to Home</a>
+                </div>
+            </div>
+
+            <div class="relative editorial-glow" data-aos="fade-left" data-aos-delay="100">
+                <div class="absolute inset-0 bg-gradient-to-br from-blue-100 via-white to-slate-50 rounded-[3rem] rotate-[-4deg]"></div>
+                <div class="relative rounded-[3rem] overflow-hidden border border-slate-100 shadow-[0_35px_80px_rgba(15,23,42,0.12)] bg-white">
+                    <div class="p-4">
+                        <div class="rounded-[2.4rem] overflow-hidden h-full min-h-[22rem] relative">
+                            <img
+                                src="https://images.unsplash.com/photo-1551888818-8c9b0f0f8b7b?auto=format&fit=crop&w=1200&q=80"
+                                alt="Dental tourism editorial"
+                                class="absolute inset-0 w-full h-full object-cover"
+                            >
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                            <div class="absolute inset-x-0 bottom-0 p-8 text-white">
+                                <p class="text-xs uppercase tracking-[0.25em] text-blue-200 font-bold">Editorial focus</p>
+                                <p class="mt-4 text-3xl font-black leading-tight">Practical guides with a premium travel tone.</p>
+                                <div class="mt-6 grid grid-cols-2 gap-3 text-sm">
+                                    <div class="rounded-2xl bg-white/10 p-4 backdrop-blur-md">
+                                        <p class="text-[10px] uppercase tracking-[0.25em] text-blue-100 font-bold">Style</p>
+                                        <p class="mt-2 font-black">Crisp and human</p>
+                                    </div>
+                                    <div class="rounded-2xl bg-white/10 p-4 backdrop-blur-md">
+                                        <p class="text-[10px] uppercase tracking-[0.25em] text-blue-100 font-bold">Utility</p>
+                                        <p class="mt-2 font-black">Decision ready</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="posts" class="py-24 md:py-32 px-6 bg-slate-50">
+        <div class="max-w-[1440px] mx-auto">
+            <div class="mb-16 border-l-4 border-blue-600 pl-6">
+                <h2 class="text-3xl md:text-5xl font-black text-slate-900 mb-2 uppercase tracking-tighter">Latest Guides</h2>
+                <p class="text-slate-400 font-bold uppercase tracking-[0.2em] text-xs">Static blog collection</p>
+            </div>
+            <div id="blog-grid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8"></div>
+        </div>
+    </section>
+
+    <footer class="py-20 px-6 text-center border-t border-slate-100">
+        <div class="text-2xl font-black mb-4">DENTAL<span class="text-blue-600">TOURISM</span></div>
+        <p class="text-slate-400 text-sm font-medium tracking-widest uppercase">© 2026 Dental Concierge Prototype. All rights reserved.</p>
+    </footer>
+
+    <div id="blog-modal" class="fixed inset-0 z-[60] hidden">
+        <div class="absolute inset-0 bg-slate-950/60 backdrop-blur-sm" data-modal-close></div>
+        <div class="relative mx-auto flex h-full max-w-7xl items-center px-4 py-6 md:px-6">
+            <div class="w-full max-h-[92vh] overflow-hidden rounded-[2rem] bg-white shadow-[0_40px_120px_rgba(0,0,0,0.2)]">
+                <div class="grid lg:grid-cols-[0.32fr_0.68fr]">
+                    <aside class="relative bg-slate-950 text-white p-6 md:p-8">
+                        <button id="blog-modal-close" class="absolute right-5 top-5 rounded-full bg-white/10 p-2 text-white hover:bg-white/20 transition" aria-label="Close blog detail">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+                        </button>
+                        <div class="space-y-4">
+                            <p id="blog-modal-category" class="text-xs font-bold uppercase tracking-[0.3em] text-blue-300">Category</p>
+                            <h3 id="blog-modal-title" class="text-3xl md:text-4xl font-black leading-tight">Blog title</h3>
+                            <p id="blog-modal-meta" class="text-sm text-slate-300">Meta</p>
+                        </div>
+                        <div class="mt-8 rounded-[1.75rem] overflow-hidden border border-white/10">
+                            <img id="blog-modal-image" src="" alt="" class="h-64 w-full object-cover">
+                        </div>
+                        <div class="mt-6 grid grid-cols-2 gap-3">
+                            <div class="rounded-2xl bg-white/5 p-4 border border-white/10">
+                                <p class="text-[10px] uppercase tracking-[0.25em] text-slate-400">Angle</p>
+                                <p id="blog-modal-angle" class="mt-2 font-bold">-</p>
+                            </div>
+                            <div class="rounded-2xl bg-white/5 p-4 border border-white/10">
+                                <p class="text-[10px] uppercase tracking-[0.25em] text-slate-400">Read time</p>
+                                <p id="blog-modal-readtime" class="mt-2 font-bold">-</p>
+                            </div>
+                            <div class="rounded-2xl bg-white/5 p-4 border border-white/10 col-span-2">
+                                <p class="text-[10px] uppercase tracking-[0.25em] text-slate-400">Author</p>
+                                <p id="blog-modal-author" class="mt-2 font-bold">-</p>
+                            </div>
+                        </div>
+                    </aside>
+                    <article class="p-6 md:p-10 overflow-y-auto max-h-[92vh] bg-slate-50/40">
+                        <p id="blog-modal-subtitle" class="text-lg md:text-xl font-medium text-slate-700 leading-relaxed"></p>
+                        <div id="blog-modal-body" class="article-prose mt-8 space-y-10 text-slate-700 leading-relaxed"></div>
+                        <div class="mt-10 rounded-[1.75rem] bg-white p-6 border border-slate-200 shadow-sm">
+                            <h4 class="text-lg font-black text-slate-900">Key takeaways</h4>
+                            <ul id="blog-modal-points" class="mt-4 space-y-3 text-slate-700"></ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const blogData = [
+            {
+                category: 'Planning',
+                title: 'How to plan a dental trip to Da Nang without losing vacation time',
+                readTime: '5 min read',
+                date: 'April 2026',
+                angle: 'Trip planning',
+                author: 'Dental Tourism Editorial Team',
+                coverImage: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1200&q=80',
+                subtitle: 'The best trips separate treatment days from sightseeing days. Start with the dental schedule, then build travel around recovery.',
+                body: [
+                    { heading: 'Start with the dental calendar', image: 'https://images.unsplash.com/photo-1588776814546-ec7e2f8e0f84?auto=format&fit=crop&w=1200&q=80', paragraphs: ['Most travelers plan flights first and treatment second. That creates stress later. For dental tourism, the smarter order is consultation, treatment sequence, then travel blocks. Once the clinic has confirmed how many visits you need, your hotel and activities become much easier to plan.', 'If your case needs imaging or a follow-up visit, leave space between appointment days. That gap is not wasted time; it is what makes the trip feel calm instead of rushed.'] },
+                    { heading: 'Use low-effort days around the procedure', image: 'https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=1200&q=80', paragraphs: ['Arrival day should be easy: check in, hydrate, and rest. The first appointment works best the next morning while energy is still high. After treatment, keep activities gentle. A quiet lunch, a short beach walk, or a café nearby is usually enough.', 'Travelers who try to fill every hour usually end up tired and less flexible if the clinic needs more time. A lighter schedule protects both the treatment and the holiday.'] },
+                    { heading: 'Why Da Nang works well', image: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80', paragraphs: ['Da Nang is compact, easy to move around, and has enough quality hotels near the main clinic areas. That makes it practical for international patients who want both medical convenience and a proper break. The city also gives you beach access, dining, and short day trips without making the itinerary complicated.', 'The short version: plan the medicine first, then build the vacation around it. That is how you keep the trip enjoyable.'] }
+                ],
+                points: [
+                    'Book clinic appointments before booking non-refundable tours.',
+                    'Leave at least one recovery buffer day for multi-step treatment.',
+                    'Choose a hotel near the clinic to reduce travel fatigue.'
+                ]
+            },
+            {
+                category: 'Costs',
+                title: 'What dental tourism really saves: price, time, or stress?',
+                readTime: '6 min read',
+                date: 'April 2026',
+                angle: 'Cost clarity',
+                author: 'Dental Tourism Editorial Team',
+                coverImage: 'https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=1200&q=80',
+                subtitle: 'Lower treatment prices matter, but the hidden value is often faster scheduling and clearer support during the trip.',
+                body: [
+                    { heading: 'Look at the full trip cost', image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80', paragraphs: ['A cheap treatment quote can still become expensive once you add extra visits, hotel nights, airport transfers, and unexpected revisions. The useful question is not “what is the lowest number?” but “what will the whole trip actually require?”', 'Good clinics will tell you whether your case is one visit, two visits, or a longer sequence. That clarity is worth a lot because it protects the rest of the itinerary.'] },
+                    { heading: 'Communication is part of the value', image: 'https://images.unsplash.com/photo-1526276798470-6a3c5f8c3d95?auto=format&fit=crop&w=1200&q=80', paragraphs: ['The best dental tourism clinics do not just give a price; they explain what the price includes. Imaging, consultation, temporary work, follow-up, and translation support should be clear before you arrive. If the answer is vague, the actual cost will usually be higher.', 'Speed matters too. Fast, structured replies reduce the chance of missed flights or wasted days.'] },
+                    { heading: 'What “good value” really means', image: 'https://images.unsplash.com/photo-1588776813677-77e54dd67f65?auto=format&fit=crop&w=1200&q=80', paragraphs: ['Value is a mix of cost, certainty, and convenience. For a traveler, that is often more important than a low headline price. If the clinic keeps the process simple and predictable, you spend less time worrying and more time enjoying the trip.', 'That is the value you want to buy.'] }
+                ],
+                points: [
+                    'Compare the full treatment path, not only the first quote.',
+                    'Ask what happens if the treatment needs an extra visit.',
+                    'Look for coordination support, not just medical pricing.'
+                ]
+            },
+            {
+                category: 'Recovery',
+                title: 'Choosing food, activities, and hotel setup after treatment',
+                readTime: '4 min read',
+                date: 'April 2026',
+                angle: 'Recovery',
+                author: 'Dental Tourism Editorial Team',
+                coverImage: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80',
+                subtitle: 'Comfort matters after procedures. The right recovery setup makes the trip feel relaxed instead of restrictive.',
+                body: [
+                    { heading: 'Plan food before the procedure', image: 'https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=80', paragraphs: ['The easiest recovery trips are the ones where food is planned in advance. Soft options near the hotel, easy room service, and nearby cafés remove a lot of friction. You should not need to search for the right meal after treatment.', 'If the clinic expects swelling or sensitivity, keep the first meal simple and the first day quiet.'] },
+                    { heading: 'Choose a hotel that reduces effort', image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80', paragraphs: ['A strong recovery hotel is not necessarily the most expensive one. It is the one that is quiet, clean, and close to the clinic. Predictability matters more than luxury after a dental procedure.', 'A short transfer is better than a scenic one.'] },
+                    { heading: 'Keep the itinerary light', image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80', paragraphs: ['If you still want to see the city, choose low-effort stops. A short beach visit, a coffee break, or a calm evening walk is enough. Long tours can wait until the treatment is done.', 'Recovery-friendly travel is still travel. It just respects the body first.'] }
+                ],
+                points: [
+                    'Plan soft-food options before the procedure.',
+                    'Keep the first 24 hours intentionally light.',
+                    'Use nearby attractions instead of long-distance tours.'
+                ]
+            },
+            {
+                category: 'Clinic Choice',
+                title: 'How to compare dental clinics when you are visiting from abroad',
+                readTime: '5 min read',
+                date: 'April 2026',
+                angle: 'Clinic selection',
+                author: 'Dental Tourism Editorial Team',
+                coverImage: 'https://images.unsplash.com/photo-1582893561942-d61cc6b2ad8a?auto=format&fit=crop&w=1200&q=80',
+                subtitle: 'The best clinic is not always the biggest one. It is the one that communicates clearly and matches your treatment plan.',
+                body: [
+                    { heading: 'Credentials are only the start', image: 'https://images.unsplash.com/photo-1580281658628-6a5f95e5f7a3?auto=format&fit=crop&w=1200&q=80', paragraphs: ['Start with the basics: address, hours, clinic type, and what services are actually available. If those are missing, the rest of the listing is not useful. Good clinic profiles should make practical decision-making easy.', 'A patient should be able to see whether the clinic is right for their case in less than a minute.'] },
+                    { heading: 'How international patients evaluate clinics', image: 'https://images.unsplash.com/photo-1551190822-a9333d879b1f?auto=format&fit=crop&w=1200&q=80', paragraphs: ['For travelers, the best clinic is the one that reduces uncertainty. That means clear communication, treatment timing, and realistic expectations about visits. A clinic that can explain the process well is usually easier to work with.', 'If the clinic has English support, clear imaging, and a structured treatment plan, that is already a strong sign.'] },
+                    { heading: 'Ask for the sequence before flying', image: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=1200&q=80', paragraphs: ['Before you book, ask for the likely sequence of visits. That one step tells you whether the clinic understands dental tourism or is just treating you like a local walk-in. The answer should include timing, follow-up, and what happens if the case needs more than one visit.', 'That is the clinic profile you can trust.'] }
+                ],
+                points: [
+                    'Judge responsiveness as seriously as credentials.',
+                    'Prefer clinics that can explain treatment in stages.',
+                    'Ask for a rough itinerary before committing to travel.'
+                ]
+            }
+        ];
+
+        const blogGrid = document.getElementById('blog-grid');
+        const blogModal = document.getElementById('blog-modal');
+        const blogModalClose = document.getElementById('blog-modal-close');
+        const blogModalCategory = document.getElementById('blog-modal-category');
+        const blogModalTitle = document.getElementById('blog-modal-title');
+        const blogModalMeta = document.getElementById('blog-modal-meta');
+        const blogModalImage = document.getElementById('blog-modal-image');
+        const blogModalAngle = document.getElementById('blog-modal-angle');
+        const blogModalReadtime = document.getElementById('blog-modal-readtime');
+        const blogModalAuthor = document.getElementById('blog-modal-author');
+        const blogModalSubtitle = document.getElementById('blog-modal-subtitle');
+        const blogModalBody = document.getElementById('blog-modal-body');
+        const blogModalPoints = document.getElementById('blog-modal-points');
+
+        const openBlogModal = (post) => {
+            blogModalCategory.textContent = post.category;
+            blogModalTitle.textContent = post.title;
+            blogModalMeta.textContent = `${post.date} • ${post.readTime}`;
+            blogModalImage.src = post.coverImage;
+            blogModalImage.alt = post.title;
+            blogModalAngle.textContent = post.angle;
+            blogModalReadtime.textContent = post.readTime;
+            blogModalAuthor.textContent = post.author;
+            blogModalSubtitle.textContent = post.subtitle;
+            blogModalBody.innerHTML = post.body.map((section) => `
+                <section class="rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm">
+                    <div class="grid gap-5 lg:grid-cols-[1fr_0.9fr] items-start">
+                        <div>
+                            <p class="text-xs font-black uppercase tracking-[0.25em] text-blue-600">${section.heading}</p>
+                            <div class="mt-4 space-y-4 text-slate-700">
+                                ${section.paragraphs.map((paragraph) => `<p>${paragraph}</p>`).join('')}
+                            </div>
+                        </div>
+                        <div class="overflow-hidden rounded-[1.25rem]">
+                            <img src="${section.image}" alt="${section.heading}" class="h-full w-full object-cover">
+                        </div>
+                    </div>
+                </section>
+            `).join('');
+            blogModalPoints.innerHTML = post.points.map((point) => `
+                <li class="flex gap-3 rounded-2xl border border-slate-200 bg-white p-4">
+                    <span class="mt-1 h-2.5 w-2.5 rounded-full bg-blue-600 flex-shrink-0"></span>
+                    <span class="text-sm">${point}</span>
+                </li>
+            `).join('');
+            blogModal.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+        };
+
+        const closeBlogModal = () => {
+            blogModal.classList.add('hidden');
+            document.body.classList.remove('overflow-hidden');
+        };
+
+        const blogCardHtml = (post, index) => `
+            <article class="blog-card group cursor-pointer rounded-[2.5rem] border border-slate-100 bg-white shadow-sm overflow-hidden transition hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.08)]" data-index="${index}" tabindex="0" role="button" aria-label="Open blog article ${post.title}">
+                <div class="relative aspect-[4/3] overflow-hidden">
+                    <img src="${post.coverImage}" alt="${post.title}" class="h-full w-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
+                    <div class="absolute inset-0 p-8 flex flex-col justify-between text-white">
+                        <div class="flex items-center justify-between text-[11px] font-black uppercase tracking-[0.25em]">
+                            <span>${post.category}</span>
+                            <span>${post.readTime}</span>
+                        </div>
+                        <div>
+                            <div class="inline-flex rounded-full bg-white/10 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.25em] backdrop-blur-md">
+                                ${post.angle}
+                            </div>
+                            <p class="mt-3 text-sm text-blue-100">${post.date}</p>
+                            <h3 class="mt-3 text-2xl font-black leading-tight">${post.title}</h3>
+                            <p class="mt-3 text-sm text-white/80">${post.subtitle}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-8">
+                    <p class="text-slate-500 font-medium">${post.subtitle}</p>
+                    <div class="mt-6 flex items-center justify-between border-t border-slate-100 pt-5">
+                        <span class="text-[11px] font-black uppercase tracking-[0.25em] text-slate-400">Read more</span>
+                        <span class="inline-flex items-center gap-1.5 text-blue-600 font-black text-[11px] tracking-widest uppercase">
+                            Open
+                    <svg class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+                        </span>
+                    </div>
+                </div>
+            </article>
+        `;
+
+        blogGrid.innerHTML = blogData.map(blogCardHtml).join('');
+        blogGrid.querySelectorAll('.blog-card').forEach((card) => {
+            const openCard = () => {
+                const index = Number(card.dataset.index);
+                openBlogModal(blogData[index]);
+            };
+            card.addEventListener('click', openCard);
+            card.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    openCard();
+                }
+            });
+        });
+
+        blogModalClose.addEventListener('click', closeBlogModal);
+        blogModal.querySelectorAll('[data-modal-close]').forEach((el) => el.addEventListener('click', closeBlogModal));
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') closeBlogModal();
+        });
+
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+</html>
